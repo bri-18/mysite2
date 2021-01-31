@@ -1,0 +1,16 @@
+{% extends "main/base.html" %}
+{% load static %}
+ {% block content %}
+ <img src="{% static 'main/cityNight.jpg' %}" >
+ <center><h2> Brian Jones website home</h2></center>
+ <div class="content-section">
+    <div class="media">
+      <img class="round-circle account-img" src="{{ user.profile.image.url }}">
+      <div class="media-body">
+        <h2 class="account-heading">{{ user.username }}</h2>
+      </div>
+    </div>
+  </div>
+ 
+ 
+ {% endblock %}
